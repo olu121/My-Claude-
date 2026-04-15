@@ -112,7 +112,7 @@ resource "aws_iam_role_policy" "ec2_policy" {
           "s3:GetObject"
         ]
         Effect = "Allow"
-        Resource = "${aws_s3_bucket.data_bucket.arn}/*"
+        Resource = "*"
       }
     ]
   })
